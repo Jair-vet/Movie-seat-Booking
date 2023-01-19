@@ -120,6 +120,11 @@ body {
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+
 p.text {
     margin: 5px 0;
     position: absolute;
