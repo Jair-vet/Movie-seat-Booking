@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.movie-container select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #ffffff1f;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 130px;
+    outline: none;
+    padding: 6px 15px 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.movie-container select:hover {
+    background-color: #ffffff6f;
+}
+
+.movie-container  {
+    text-align: center;
+}
+
+.movie-container  label{
+    text-transform: uppercase;
+    margin: 3px;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 19px;
+    width: 25px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: #6feaf6;
+}
+
+.row {
+    display: flex;
+    margin-right: 120px;
+}
+
+.seat.occupied {
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 18px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    position: fixed;
+    margin-left: 450px;
+    box-shadow: 0 2px 10px 2px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.screen {
+    background-color: #fff;
+    transform: rotateX(-45deg);
+    height: 70px;
+    width: 77%;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: -8px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+    margin: 5px 0;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: -120px;
+}
+
+p.text span {
+    color: #6fbaf6;
+}
